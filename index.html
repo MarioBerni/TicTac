@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Tic Tac Toe</h1>
+    <p>
+      Jugar contra: 
+      <select id="opponent-select">
+        <option value="computer">Computadora</option>
+        <option value="human">Humano</option>
+      </select>
+    </p>
+    <div id="names-input">
+      <div>
+        <input type="text" id="player1-name" placeholder="Nombre jugador 1 (X)">
+        <span id="player1-symbol">X</span>
+      </div>
+      <div>
+        <input type="text" id="player2-name" placeholder="Nombre jugador 2 (O o 'Computadora')">
+        <span id="player2-symbol">O</span>
+      </div>
+    </div>
+    <p id="turn">Turno de: </p>
+    <div id="tic-tac-toe-board">
+      <div class="row">
+        <div class="cell" data-cell-index="0"></div>
+        <div class="cell" data-cell-index="1"></div>
+        <div class="cell" data-cell-index="2"></div>
+      </div>
+      <div class="row">
+        <div class="cell" data-cell-index="3"></div>
+        <div class="cell" data-cell-index="4"></div>
+        <div class="cell" data-cell-index="5"></div>
+      </div>
+      <div class="row">
+        <div class="cell" data-cell-index="6"></div>
+        <div class="cell" data-cell-index="7"></div>
+        <div class="cell" data-cell-index="8"></div>
+      </div>
+    </div>
+    <button id="reset-button">Reiniciar juego</button>
+    <p id="winner-message"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
